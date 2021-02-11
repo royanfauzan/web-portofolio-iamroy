@@ -1,0 +1,668 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* TEXT RELATED */
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10vw;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* flex famili */
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tengah-ver{
+    align-items: center;
+}
+
+.tengah-hor{
+    justify-content: center;
+}
+
+.ver-spacing{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* NAVBAR */
+
+
+.navbar{
+    width: 100%;
+    height: 16vh;
+    left: 0;
+    top: 0;
+    position: sticky;
+    background-color: white;
+    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103); */
+    transition: 1s;
+}
+
+.nav-items{
+    width: 70%;
+    height: 80%;
+    /* background-color: royalblue; */
+    justify-content: space-around;
+}
+
+.nav-items li{
+    list-style: none;
+}
+
+.nav-items li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.nav-items li a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.nav-items li a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+/* BLOK */
+
+.blok1{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/background/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.blok2{
+    width: 100vw;
+    height: 90vh;
+    padding-top: 3%;
+    
+}
+
+.blok3{
+    width: 100vw;
+    height: 80vh;
+    background-color: #f0d73c;
+    margin-bottom: 5vh;
+}
+
+.blok4{
+    width: 100vw;
+    height: 60vh;
+    padding-top: 3%;
+    background-image: url(../image/background/Bg2.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+footer{
+    width: 100vw;
+    height: auto;
+    background-color: rgb(24, 24, 24);
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer p{
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+.inner-blok50{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    align-items: flex-end;
+}
+
+.wrapper h1{
+    font-size: 10vw;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(88, 88, 88);
+}
+
+.wrapper h1:nth-child(2){
+    font-size: 8vw;
+}
+
+.inner-blok40{
+    width: 100vw;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-blok40 p{
+    padding-top: 2%;
+}
+
+.inner-blok10{
+    width: 100vw;
+    height: 10%;
+}
+
+.pemisah{
+    height: auto;
+    width: auto;
+}
+
+/* TOMBOL NEXT */
+
+.tombol-next{
+    font-family: 'Roboto';
+    font-weight: bolder;
+    flex-direction: column;
+}
+
+
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+.tombol-next img{
+    width: 51px;
+}
+
+.tombol-next p{
+    margin: 0;
+    padding: 0;
+}
+
+.tombol-next p:hover{
+    background-color: rgb(56, 54, 54);
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+/* PROFILE */
+
+.penengah{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+}
+
+.judul{
+    height: 10%;
+    width: 100%;
+    /* text-align: right; */
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+}
+
+
+
+.judul h2{
+    font-size: 3.4em;
+    text-decoration: underline;
+    padding-right: 9vw;
+}
+
+
+.profile{
+    width: 40vh;
+    height: auto;
+}
+
+.foto{
+    width: 38vh;
+    height: 38vh;
+    border-radius: 100%;
+    background-color: #f0d73c;
+}
+
+.foto img{
+    max-width: 98%;
+    border-radius: inherit;
+}
+
+.tulisan{
+    text-align: center;
+}
+
+.tulisan h3{
+    font-size: 1.5em;
+}
+
+/* PORTOFOLIO */
+
+.judul2{
+    width: 30%;
+    color: whitesmoke;
+    
+}
+
+.judul2 h2{
+    font-size: 3.4em;
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+.porto{
+    width: 68%;
+}
+
+.bungkus{
+    height: 100%;
+    width: auto;
+}
+
+.inner-b1{
+    height: 60vh;
+    width: 60vh;
+}
+
+.inner-b1 img{
+    max-width: 25vh;
+    margin-left: 2vw;
+    border-radius: 5%;
+}
+
+
+.inner-b80{
+    height: 70%;
+}
+
+.inner-b80 img{
+    max-width: 90%;
+    
+}
+
+.inner-b2{
+    width: 30vh;
+    height: 60vh;
+}
+
+.inner-b30{
+    height: 100%;
+}
+
+.inner-b30 img{
+    max-width: 80%;
+    margin-left: 2vw;
+    border-radius: 5%;
+}
+
+
+
+
+/* KONTAK */
+
+.bung-kontak{
+    width: auto;
+    height: 40vh;
+    justify-content: space-around;
+    padding-right: 3vw;
+    /* overflow: hidden; */
+}
+
+.kontak{
+    height: auto;
+    width: 40vw;
+    
+    /* overflow: hidden; */
+    padding-top: 6vh;
+}
+
+.isi-kontak{
+    display: flex;
+    height: 6vh;
+    width: 100%;
+    
+    /* overflow: hidden; */
+    text-align: left;
+    align-items: center;
+}
+
+
+.isi-kontak p{
+    text-align: left;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: #1d1d1f;
+}
+
+.ikon{
+    height: 100%;
+    width: 20%;
+}
+
+.ikon img{
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.map{
+    margin-top: 20px;
+    min-height: 300px;
+}
+
+.copyr{
+    height: 5vh;
+    background-color: black;
+    text-align: center;
+    color: rgb(235, 232, 229);
+    padding: 5px;
+    font-size: 0.8em;
+}
+
+
+
+@media (max-width: 1078px){
+
+
+    .tengah-vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 8em;
+    }
+
+    .wrapper h1{
+        font-size: 8em;
+    }
+
+    .wrapper h1:nth-child(2){
+        font-size: 6.73em;
+    }
+
+    .pemisah{
+        width: 100%;
+    }
+
+    .judul2{
+        width: 100%;
+        padding-left: 5%;
+        margin-top: 3%;
+    }
+
+    .res-hor{
+        justify-content: left;
+    }
+
+    .blok3{
+        height: auto;
+        padding-bottom: 3vh;
+    }
+
+    .kontak{
+        width: 50vw;
+    }
+    .blok4{
+        height: auto;
+        }
+
+    .bung-kontak{
+        overflow: visible;
+        height: auto;
+    }
+
+}
+
+
+@media (max-width: 950px){
+
+    .tengah-vertical{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blok4{
+        height: auto;
+        }
+    
+        .bung-kontak{
+            overflow: visible;
+            height: auto;
+        }
+
+}
+
+@media (max-width: 855px){
+    
+    h1{
+        font-size: 6.9em;
+    }
+
+    .wrapper h1{
+        font-size: 6.9em;
+    }
+
+    .wrapper h1:nth-child(2){
+        font-size: 5.5em;
+    }
+    .judul{
+        margin-bottom: 3%;
+    }
+
+    .judul2{
+        margin-bottom: 3%;
+    }
+
+    .judul h2{
+        font-size: 2.8em;
+        right: 5%;
+    }
+    .judul2 h2{
+        font-size: 2.8em;
+        right: 5%;
+    }
+
+    .blok3{
+        height: auto;
+        padding-bottom: 3vh;
+    }
+    .blok4{
+    height: auto;
+    }
+    .kontak{
+        width: 60vw;
+    }
+
+    .bungkus{
+        padding-top: 3%;
+    }
+
+    .inner-b1{
+        height: auto;
+    }
+    
+    .inner-b1 img{
+        max-width: 60vh;
+    }
+    
+    
+    .inner-b80{
+        height: 70%;
+    }
+    
+    .inner-b80 img{
+        max-width: 90%;
+        
+    }
+    
+    .inner-b2{
+        width: 60vh;
+        height: auto;
+    }
+    
+    .inner-b20 img{
+        max-width: 90%;
+        max-height: 90%;
+        margin-top: 4%;
+    }
+
+    .inner-b30{
+        width: 60vh;
+        height: auto;
+    }
+
+    .inner-b30 img{
+        max-width: 90%;
+        margin-top: 4%;
+    }
+
+    .res-hor2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .bung-kontak{
+        overflow: visible;
+        height: auto;
+    }
+    
+    .kontak{
+
+        padding-top: 3vh;
+    }
+
+    .nav-items{
+        width: 80%;
+        padding-inline-start: 0;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .judul{
+        margin-bottom: 8%;
+    }
+
+    .judul h2{
+        font-size: 2.2em;
+        right: 8%;
+    }
+
+    .tombol-next{
+        right: 45%;
+    }
+
+    .kontak{
+        width: 80vw;
+    }
+
+    .inner-b80 img{
+        max-width: 250px;
+    }
+    .inner-b20 img{
+        max-width: 250px;
+    }
+
+    .inner-b30 img{
+        max-width: 250px;
+    }
+    .blok4{
+        height: auto;
+    }
+
+    .bung-kontak{
+        overflow: visible;
+        height: auto;
+    }
+
+    .kontak{
+
+        padding-top: 3vh;
+    }
+
+    .nav-items{
+        width: 85%;
+        padding-inline-start: 0;
+    }
+}
+
+@media screen and (max-width: 415px){
+    h1{
+        font-size: 5em;
+    }
+
+    .wrapper h1{
+        font-size: 5em;
+    }
+
+    .wrapper h1:nth-child(2){
+        font-size: 3.7em;
+    }
+
+    .kontak{
+        width: 95vw;
+    }
+    .blok4{
+        height: auto;
+    }
+
+    .bung-kontak{
+        overflow: visible;
+        height: auto;
+    }
+
+    .kontak{
+
+        padding-top: 3vh;
+    }
+
+    .nav-items{
+        width: 90%;
+        padding-inline-start: 0;
+    }
+}
