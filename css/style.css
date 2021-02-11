@@ -606,6 +606,7 @@ a:visited{
     }
     .inner-b20 img{
         max-width: 250px;
+        max-height: 30vh;
     }
 
     .inner-b30 img{
