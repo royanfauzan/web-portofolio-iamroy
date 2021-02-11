@@ -1,3 +1,56 @@
+/* RESETTER START */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+/* HTML5 display-role reset for older browsers */
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* RESETTER END */
+
 body{
     margin: 0;
     padding: 0;
@@ -5,6 +58,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 
 /* TEXT RELATED */
 
@@ -67,7 +121,8 @@ p{
     position: sticky;
     background-color: white;
     /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103); */
-    transition: 1s;
+    transition: 0.8s;
+    z-index: 999;
 }
 
 .nav-items{
@@ -105,6 +160,15 @@ p{
     height: 100vh;
     background-image: url(../image/background/background.png);
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.blok1-sub{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../image/background/background.png);
+    background-position: bottom -20% right;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -238,7 +302,7 @@ a:visited{
 
 .judul{
     height: 10%;
-    width: 100%;
+    width: 90%;
     /* text-align: right; */
     margin-bottom: 3vh;
     margin-left: 3vw;
@@ -252,6 +316,34 @@ a:visited{
     padding-right: 9vw;
 }
 
+#luar-tentang{
+    /* background-color: black; */
+    width: 100%;
+}
+
+#jud-tentang{
+    text-align: center;
+    text-decoration: none;
+    padding-right: 0;
+}
+
+.tentang{
+    width: 90vw;
+    height: auto;
+}
+
+
+
+.kotak-tulisan{
+    width: 60vw;
+    align-content: center;
+}
+
+.kotak-tulisan  p{
+    max-width: 100%;
+    margin: 0;
+    text-align: center;
+}
 
 .profile{
     width: 40vh;
@@ -271,8 +363,11 @@ a:visited{
 }
 
 .tulisan{
+    width: 100%;
     text-align: center;
 }
+
+
 
 .tulisan h3{
     font-size: 1.5em;
@@ -294,6 +389,7 @@ a:visited{
 
 .porto{
     width: 68%;
+    height: 60%;
 }
 
 .bungkus{
@@ -347,14 +443,14 @@ a:visited{
     height: 40vh;
     justify-content: space-around;
     padding-right: 3vw;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .kontak{
     height: auto;
     width: 40vw;
     
-    /* overflow: hidden; */
+    overflow: hidden;
     padding-top: 6vh;
 }
 
@@ -363,7 +459,7 @@ a:visited{
     height: 6vh;
     width: 100%;
     
-    /* overflow: hidden; */
+    overflow: hidden;
     text-align: left;
     align-items: center;
 }
@@ -398,6 +494,14 @@ a:visited{
     color: rgb(235, 232, 229);
     padding: 5px;
     font-size: 0.8em;
+}
+
+.testismon{
+    height: 60vh;
+}
+
+.glide__bullets{
+    position: static;
 }
 
 
@@ -455,6 +559,10 @@ a:visited{
         height: auto;
     }
 
+    .blok1-sub{
+        background-position: bottom;
+    }
+
 }
 
 
@@ -474,6 +582,10 @@ a:visited{
         .bung-kontak{
             overflow: visible;
             height: auto;
+        }
+
+        .blok1-sub{
+            background-position: bottom;
         }
 
 }
@@ -581,6 +693,10 @@ a:visited{
         width: 80%;
         padding-inline-start: 0;
     }
+
+    .blok1-sub{
+        background-position: bottom;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -630,6 +746,10 @@ a:visited{
         width: 85%;
         padding-inline-start: 0;
     }
+
+    .blok1-sub{
+        background-position: bottom;
+    }
 }
 
 @media screen and (max-width: 415px){
@@ -665,5 +785,9 @@ a:visited{
     .nav-items{
         width: 90%;
         padding-inline-start: 0;
+    }
+
+    .blok1-sub{
+        background-position: bottom;
     }
 }

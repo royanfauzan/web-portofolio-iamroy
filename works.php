@@ -1,13 +1,17 @@
+<?php include("config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,800;1,300;1,400;1,800&family=Roboto:ital,wght@0,400;0,900;1,900&display=swap" rel="stylesheet">
     <title>Royan Fauzan</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 </head>
 <body>
     <nav class="navbar flex tengah-hor tengah-ver" id="navbar">
@@ -18,81 +22,84 @@
             <li><a href="#">Guest Book</a></li>
         </ul>
     </nav>
-    <div class="blok1">
+    <div class="blok1-sub">
         <div class="inner-blok50">
-            <div class="wrapper">
+            <!-- <div class="wrapper">
                 <h1>I</h1>
                 <h1>'M</h1>
-            </div>
-            <h1>&nbsp;ROY</h1>
+            </div> -->
+            <h1>&nbsp;Works</h1>
         </div>
-        <div class="inner-blok40">
+        <!-- <div class="inner-blok40">
             <p>Digital Painter &nbsp;</p>
             <p>& &nbsp;</p>
             <p>Web Designer</p>
-        </div>
-        <!-- <div class="inner-blok10 flex tengah-hor">
+        </div> -->
+        <div class="inner-blok10 flex tengah-hor">
             <a href="#id_profile" class="tombol-next flex">
                 <p>&nbsp;MORE&nbsp;</p>
                 <img src="image/icon/panah.png" alt="PANAH"> 
             </a>
-        </div> -->
+        </div>
     </div>
     
-    <div class="blok2" id="luar-tentang">
+    <!-- <div class="blok2" id="id_profile">
         <div class="judul">
-            <h2 id="jud-tentang">Hi....</h2>
+            <h2>PROFILE</h2>
         </div>
         
         <div class="penengah profile-box tengah-vertical">
             
-            <div class="tentang flex tengah-hor">
+            <div class="profile flex tengah-hor">
                 
-                
-                <div class="tulisan penengah">
-                    <!-- <h3>this site</h3>
-                    <p>is</p> -->
-                    <!-- <br> -->
-                    <div class="kotak-tulisan">
-                        <p>"This site is spesificly made for the 
-                            purpose of promoting my previous 
-                            works and project's i've been 
-                            involved throughout my career, Feel Free to explore, 
-                            most importantly Enjoy your day.."</p>
-                    </div>
-                    
+                <div class="foto flex tengah-hor tengah-ver">
+                    <img src="image/portofolio/foto.jpg" alt="">
+                </div>
+                <div class="tulisan">
+                    <h3>Royan Fauzan</h3>
+                    <p>20</p>
+                    <br>
+                    <p>"2nd year college student who has passion in both <b>Art</b> and <b>Technologies</b> "</p>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
-    <!-- <div class="blok3 flex tengah-hor">
+    <div class="blok3 flex tengah-hor tengah-ver">
         <div class="judul2 flex tengah-ver tengah-hor res-hor">
-            <h2> MY WORKS </h2>
+            <h2> Testimonial </h2>
         </div>
         <div class="pemisah">
             
         </div>
         <div class="porto">
-            <div class="bungkus flex tengah-hor tengah-ver">
-                <div class="inner-b1">
-                    <div class="inner-b80 flex tengah-hor tengah-ver">
-                        <img src="image/portofolio/1.jpg" alt="Face">
-                    </div>
-                    <div class="inner-b20 res-hor2">
-                        <img src="image/portofolio/5.jpg" alt="Horor">
-                    </div>
-                </div>
-                <div class="inner-b2 flex ver-spacing">
-                    <div class="inner-b30 flex tengah-hor tengah-ver" >
-                        <img src="image/portofolio/2.jpg" alt="Web 1">
-                        <img src="image/portofolio/3.jpg" alt="Web 2">
-                        <img src="image/portofolio/4.jpg" alt="Thug">
-                    </div>
-                </div>
-            </div>
+        <?php
+		$sql = "SELECT * FROM bukutamu";
+        $query = mysqli_query($db, $sql);
+        
+        $kotak='<div class="testismon flex tengah-hor"><div class="glide__track" data-glide-el="track"><ul class="glide__slides">';
+        $bullets = '<div class="glide__bullets" data-glide-el="controls[nav]">';
+        $penghitung=0;
+        while($siswa = mysqli_fetch_array($query)){
+            $kotak.= <<<kotak
+                <li class="glide__slide">
+                    <h3>{$siswa['id']}.{$siswa['nama']}</h3>
+                    <p>{$siswa['pesan_saya']}</p>
+                </li>
+            kotak;
+            $bullets.=<<<bullets
+                <button class="glide__bullet" data-glide-dir="={$penghitung}"></button>
+                bullets;
+            $penghitung++;
+		}
+        $kotak.="</ul></div>";
+        $kotak.=$bullets."</div></div>";
+        echo $kotak;
+        ?>
+        
+
         </div>
-    </div> -->
+    </div>
     
     <div class="blok4">
         <div class="judul">
@@ -141,5 +148,12 @@
     </footer> -->
 
     <script src="./js/main.js"></script>
+    <script>
+        new Glide('.testismon', {
+            autoplay:3000,
+            perView:2.5,
+            hoverpause:true
+        }).mount()
+    </script>
 </body>
 </html>
