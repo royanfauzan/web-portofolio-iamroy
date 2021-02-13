@@ -1,3 +1,30 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])) {
+?>
+<?php
+include('config.php');
+
+
+  if (isset($_GET['id'])) {
+    $id = ($_GET["id"]);
+
+    $query = "SELECT * FROM guestbook WHERE id='$id'";
+    $result = mysqli_query($db, $query);
+    if(!$result){
+      die ("Query Error: ".mysqli_errno($db).
+         " - ".mysqli_error($db));
+    }
+
+    $data = mysqli_fetch_assoc($result);
+       if (!count($data)) {
+          echo "<script>alert('Data tidak ditemukan pada database');window.location='listtamu.php';</script>";
+       }
+  } else {
+    echo "<script>alert('Masukkan data id.');window.location='listtamu.php';</script>";
+  } 
+  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,76 +45,52 @@
             <li><a href="listtamu.php">Guest Book</a></li>
         </ul>
     </nav>
-    <div class="blok1-sub">
-        <div class="inner-blok50">
-            <!-- <div class="wrapper">
-                <h1>I</h1>
-                <h1>'M</h1>
-            </div> -->
-            <h1>&nbsp;Profile</h1>
-        </div>
-        <!-- <div class="inner-blok40">
-            <p>Digital Painter &nbsp;</p>
-            <p>& &nbsp;</p>
-            <p>Web Designer</p>
-        </div> -->
-        <div class="inner-blok10 flex tengah-hor">
-            <a href="#id_profile" class="tombol-next flex">
-                <p>&nbsp;MORE&nbsp;</p>
-                <img src="image/icon/panah.png" alt="PANAH"> 
-            </a>
-        </div>
-    </div>
+
     
-    <div class="blok2" id="id_profile">
+    <div class="blok2" id="luar-tabel">
         <div class="judul">
-            <h2>PROFILE</h2>
+            <h2 id="jud-tentang">Add Testimony</h2>
         </div>
         
         <div class="penengah profile-box tengah-vertical">
             
-            <div class="profile flex tengah-hor">
+            <div class="tentang flex tengah-hor">
                 
-                <div class="foto flex tengah-hor tengah-ver">
-                    <img src="image/portofolio/foto.jpg" alt="">
-                </div>
-                <div class="tulisan">
-                    <h3>Royan Fauzan</h3>
-                    <p>20</p>
-                    <br>
-                    <p >"2nd year college student who has passion in both <b>Art</b> and <b>Technologies</b> "</p>
+                
+                <div class="tulisan penengah">
+                    
+                    <div class="kotak-tulisan">
+                    <form method="POST" action="testi-editor.php" enctype="multipart/form-data" >
+                        <section class="base">
+                        <input name="id" value="<?php echo $data['id']; ?>"  hidden />
+                            <div>
+                                <label>Name.</label>
+                                <input type="text" value="<?php echo $data['nama']; ?>" name="nama" autofocus="" required />
+                            </div>
+                            <div>
+                                <label>Profession.</label>
+                                <input type="text" value="<?php echo $data['profesi']; ?>" name="profesi" autofocus="" required />
+                            </div>
+                            <div>
+                                <label>Email.</label>
+                                <input type="text" value="<?php echo $data['email']; ?>" name="email" autofocus="" required />
+                            </div>
+                            <div>
+                                <label>Testimony.</label>
+                                <input type="text" value="<?php echo $data['testimoni']; ?>" id="input-testi" name="testimoni" />
+                            </div>
+                            <div>
+                                <button class="btn-simpan" type="submit">Save</button>
+                            </div>
+                            </section>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
     
-    <!-- <div class="blok3 flex tengah-hor">
-        <div class="judul2 flex tengah-ver tengah-hor res-hor">
-            <h2> MY WORKS </h2>
-        </div>
-        <div class="pemisah">
-            
-        </div>
-        <div class="porto">
-            <div class="bungkus flex tengah-hor tengah-ver">
-                <div class="inner-b1">
-                    <div class="inner-b80 flex tengah-hor tengah-ver">
-                        <img src="image/portofolio/1.jpg" alt="Face">
-                    </div>
-                    <div class="inner-b20 res-hor2">
-                        <img src="image/portofolio/5.jpg" alt="Horor">
-                    </div>
-                </div>
-                <div class="inner-b2 flex ver-spacing">
-                    <div class="inner-b30 flex tengah-hor tengah-ver" >
-                        <img src="image/portofolio/2.jpg" alt="Web 1">
-                        <img src="image/portofolio/3.jpg" alt="Web 2">
-                        <img src="image/portofolio/4.jpg" alt="Thug">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
     
     <div class="blok4">
         <div class="judul">
@@ -131,10 +134,12 @@
     <div class="copyr">
         <p>&copy; 2020 - Royan Fauzan</p>
     </div>
-    <!-- <footer>
-        
-    </footer> -->
+
 
     <script src="./js/main.js"></script>
 </body>
 </html>
+<?php 
+} else {
+    echo '<script>window.location.replace("./listtamu.php");</script>';
+} ?>

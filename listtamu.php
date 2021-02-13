@@ -1,3 +1,4 @@
+<?php include("config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,44 +19,98 @@
             <li><a href="listtamu.php">Guest Book</a></li>
         </ul>
     </nav>
-    <div class="blok1-sub">
+    <!-- <div class="blok1">
         <div class="inner-blok50">
-            <!-- <div class="wrapper">
+            <div class="wrapper">
                 <h1>I</h1>
                 <h1>'M</h1>
-            </div> -->
-            <h1>&nbsp;Profile</h1>
+            </div>
+            <h1>&nbsp;ROY</h1>
         </div>
-        <!-- <div class="inner-blok40">
+        <div class="inner-blok40">
             <p>Digital Painter &nbsp;</p>
             <p>& &nbsp;</p>
             <p>Web Designer</p>
-        </div> -->
+        </div>
         <div class="inner-blok10 flex tengah-hor">
             <a href="#id_profile" class="tombol-next flex">
                 <p>&nbsp;MORE&nbsp;</p>
                 <img src="image/icon/panah.png" alt="PANAH"> 
             </a>
-        </div>
-    </div>
+        </div> 
+    </div> -->
     
-    <div class="blok2" id="id_profile">
+    <div class="blok2" id="luar-tabel">
         <div class="judul">
-            <h2>PROFILE</h2>
+            <h2 id="jud-tentang">Guest Book</h2>
         </div>
         
         <div class="penengah profile-box tengah-vertical">
             
-            <div class="profile flex tengah-hor">
+            <div class="tentang flex tengah-hor">
                 
-                <div class="foto flex tengah-hor tengah-ver">
-                    <img src="image/portofolio/foto.jpg" alt="">
-                </div>
-                <div class="tulisan">
-                    <h3>Royan Fauzan</h3>
-                    <p>20</p>
-                    <br>
-                    <p >"2nd year college student who has passion in both <b>Art</b> and <b>Technologies</b> "</p>
+                
+                <div class="tulisan penengah">
+                    <!-- <h3>this site</h3>
+                    <p>is</p> -->
+                    <!-- <br> -->
+                    <div class="kotak-tulisan">
+                        <p>"This is the list of kind people that leave testimonial of this site"</p>
+                        <p> Add your <b> own testimonial</b> <a href="tambah-testi.php">here..</a></p>
+                        
+                    </div>
+                    <div class="kotak-tulisan">
+                        <table>
+                            <thead>
+                                <tr>
+                                <th>No</th>
+                                <th>Nama</th>
+                                <th>Profesi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            
+                            $query = "SELECT * FROM guestbook ORDER BY id ASC";
+                            $result = mysqli_query($db, $query);
+                            
+                            if(!$result){
+                                die ("Query Error: ".mysqli_errno($db).
+                                " - ".mysqli_error($db));
+                            }
+
+                            
+                            $no = 1; 
+                            
+                            while($row = mysqli_fetch_assoc($result))
+                            {
+                            ?>
+                            <tr>
+                                <td><?php echo $no; ?></td>
+                                <td><?php 
+                                        if(strlen($row['nama'])>11){
+                                            echo substr($row['nama'], 0, 11).'..'; 
+                                        }else{
+                                            echo $row['nama'];
+                                        }
+                                    ?></td>
+                                <td><?php 
+                                        if(strlen($row['profesi'])>8){
+                                            echo substr($row['profesi'], 0, 8).'..'; 
+                                        }else{
+                                            echo $row['profesi'];
+                                        }
+                                    ?></td>
+                            </tr>
+                                
+                            <?php
+                                $no++; 
+                            }
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    
                 </div>
             </div>
         </div>

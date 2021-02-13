@@ -1,3 +1,4 @@
+<?php include("config.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,44 +19,68 @@
             <li><a href="listtamu.php">Guest Book</a></li>
         </ul>
     </nav>
-    <div class="blok1-sub">
+    <!-- <div class="blok1">
         <div class="inner-blok50">
-            <!-- <div class="wrapper">
+            <div class="wrapper">
                 <h1>I</h1>
                 <h1>'M</h1>
-            </div> -->
-            <h1>&nbsp;Profile</h1>
+            </div>
+            <h1>&nbsp;ROY</h1>
         </div>
-        <!-- <div class="inner-blok40">
+        <div class="inner-blok40">
             <p>Digital Painter &nbsp;</p>
             <p>& &nbsp;</p>
             <p>Web Designer</p>
-        </div> -->
+        </div>
         <div class="inner-blok10 flex tengah-hor">
             <a href="#id_profile" class="tombol-next flex">
                 <p>&nbsp;MORE&nbsp;</p>
                 <img src="image/icon/panah.png" alt="PANAH"> 
             </a>
-        </div>
-    </div>
+        </div> 
+    </div> -->
     
-    <div class="blok2" id="id_profile">
+    <div class="blok2" id="luar-tabel">
         <div class="judul">
-            <h2>PROFILE</h2>
+            <h2 id="jud-tentang">Add Testimony</h2>
         </div>
         
         <div class="penengah profile-box tengah-vertical">
             
-            <div class="profile flex tengah-hor">
+            <div class="tentang flex tengah-hor">
                 
-                <div class="foto flex tengah-hor tengah-ver">
-                    <img src="image/portofolio/foto.jpg" alt="">
-                </div>
-                <div class="tulisan">
-                    <h3>Royan Fauzan</h3>
-                    <p>20</p>
-                    <br>
-                    <p >"2nd year college student who has passion in both <b>Art</b> and <b>Technologies</b> "</p>
+                
+                <div class="tulisan penengah">
+                    <!-- <h3>this site</h3>
+                    <p>is</p> -->
+                    <!-- <br> -->
+                    
+                    <div class="kotak-tulisan">
+                    <form method="POST" action="testi-adder.php" enctype="multipart/form-data" >
+                        <section class="base">
+                            <div>
+                                <label>Name.</label>
+                                <input type="text" name="nama" autofocus="" required />
+                            </div>
+                            <div>
+                                <label>Profession.</label>
+                                <input type="text" name="profesi" autofocus="" required />
+                            </div>
+                            <div>
+                                <label>Email.</label>
+                                <input type="text" name="email" autofocus="" required />
+                            </div>
+                            <div>
+                                <label>Testimony.</label>
+                                <input type="text" id="input-testi" name="testimoni" />
+                            </div>
+                            <div>
+                                <button class="btn-simpan" type="submit">Save</button>
+                            </div>
+                            </section>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </div>

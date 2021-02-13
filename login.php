@@ -1,3 +1,11 @@
+<?php
+session_start();
+include('config.php');
+if(isset($_SESSION['username'])) {
+    echo '<script>window.location.replace("./listadmin.php");</script>';
+} else {
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,76 +26,48 @@
             <li><a href="listtamu.php">Guest Book</a></li>
         </ul>
     </nav>
-    <div class="blok1-sub">
-        <div class="inner-blok50">
-            <!-- <div class="wrapper">
-                <h1>I</h1>
-                <h1>'M</h1>
-            </div> -->
-            <h1>&nbsp;Profile</h1>
-        </div>
-        <!-- <div class="inner-blok40">
-            <p>Digital Painter &nbsp;</p>
-            <p>& &nbsp;</p>
-            <p>Web Designer</p>
-        </div> -->
-        <div class="inner-blok10 flex tengah-hor">
-            <a href="#id_profile" class="tombol-next flex">
-                <p>&nbsp;MORE&nbsp;</p>
-                <img src="image/icon/panah.png" alt="PANAH"> 
-            </a>
-        </div>
-    </div>
+
     
-    <div class="blok2" id="id_profile">
+    <div class="blok2" id="luar-tabel">
         <div class="judul">
-            <h2>PROFILE</h2>
+            <h2 id="jud-tentang">Login</h2>
         </div>
         
         <div class="penengah profile-box tengah-vertical">
             
-            <div class="profile flex tengah-hor">
+            <div class="tentang flex tengah-hor">
                 
-                <div class="foto flex tengah-hor tengah-ver">
-                    <img src="image/portofolio/foto.jpg" alt="">
-                </div>
-                <div class="tulisan">
-                    <h3>Royan Fauzan</h3>
-                    <p>20</p>
-                    <br>
-                    <p >"2nd year college student who has passion in both <b>Art</b> and <b>Technologies</b> "</p>
+                
+                <div class="tulisan penengah">
+                    <!-- <h3>this site</h3>
+                    <p>is</p> -->
+                    <!-- <br> -->
+                    
+                    <div class="kotak-tulisan">
+                    <form method="POST" action="verifikasi-login.php" enctype="multipart/form-data" >
+                        <section class="base">
+                            <div>
+                                <label>Username.</label>
+                                <input type="text" name="username" autofocus="" required />
+                            </div>
+                            <div>
+                                <label>Password.</label>
+                                <input type="password" name="passw" autofocus="" required />
+                            </div>
+                            
+                            <div>
+                                <button class="btn-simpan" type="submit">Login</button>
+                            </div>
+                            </section>
+                        </form>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
     
-    <!-- <div class="blok3 flex tengah-hor">
-        <div class="judul2 flex tengah-ver tengah-hor res-hor">
-            <h2> MY WORKS </h2>
-        </div>
-        <div class="pemisah">
-            
-        </div>
-        <div class="porto">
-            <div class="bungkus flex tengah-hor tengah-ver">
-                <div class="inner-b1">
-                    <div class="inner-b80 flex tengah-hor tengah-ver">
-                        <img src="image/portofolio/1.jpg" alt="Face">
-                    </div>
-                    <div class="inner-b20 res-hor2">
-                        <img src="image/portofolio/5.jpg" alt="Horor">
-                    </div>
-                </div>
-                <div class="inner-b2 flex ver-spacing">
-                    <div class="inner-b30 flex tengah-hor tengah-ver" >
-                        <img src="image/portofolio/2.jpg" alt="Web 1">
-                        <img src="image/portofolio/3.jpg" alt="Web 2">
-                        <img src="image/portofolio/4.jpg" alt="Thug">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
     
     <div class="blok4">
         <div class="judul">
@@ -138,3 +118,5 @@
     <script src="./js/main.js"></script>
 </body>
 </html>
+
+<?php } ?>

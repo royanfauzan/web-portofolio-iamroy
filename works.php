@@ -19,7 +19,7 @@
             <li> <a href="index.html">HOME</a> </li>
             <li> <a href="profile.html">Profile</a></li>
             <li><a href="works.php">Works</a></li>
-            <li><a href="#">Guest Book</a></li>
+            <li><a href="listtamu.php">Guest Book</a></li>
         </ul>
     </nav>
     <div class="blok1-sub">
@@ -36,7 +36,7 @@
             <p>Web Designer</p>
         </div> -->
         <div class="inner-blok10 flex tengah-hor">
-            <a href="#id_profile" class="tombol-next flex">
+            <a href="#kuning" class="tombol-next flex">
                 <p>&nbsp;MORE&nbsp;</p>
                 <img src="image/icon/panah.png" alt="PANAH"> 
             </a>
@@ -65,40 +65,75 @@
         </div>
     </div> -->
     
-    <div class="blok3 flex tengah-hor tengah-ver">
+    <div class="blok3 flex tengah-hor tengah-ver" id="kuning">
         <div class="judul2 flex tengah-ver tengah-hor res-hor">
-            <h2> Testimonial </h2>
+            <h2> My Works</h2>
         </div>
         <div class="pemisah">
             
         </div>
         <div class="porto">
-        <?php
-		$sql = "SELECT * FROM bukutamu";
-        $query = mysqli_query($db, $sql);
-        
-        $kotak='<div class="testismon flex tengah-hor"><div class="glide__track" data-glide-el="track"><ul class="glide__slides">';
-        $bullets = '<div class="glide__bullets" data-glide-el="controls[nav]">';
-        $penghitung=0;
-        while($siswa = mysqli_fetch_array($query)){
-            $kotak.= <<<kotak
-                <li class="glide__slide">
-                    <h3>{$siswa['id']}.{$siswa['nama']}</h3>
-                    <p>{$siswa['pesan_saya']}</p>
-                </li>
-            kotak;
-            $bullets.=<<<bullets
-                <button class="glide__bullet" data-glide-dir="={$penghitung}"></button>
-                bullets;
-            $penghitung++;
-		}
-        $kotak.="</ul></div>";
-        $kotak.=$bullets."</div></div>";
-        echo $kotak;
-        ?>
-        
-
+            <div class="bungkus flex tengah-hor tengah-ver">
+                <div class="gambar">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img src="image/portofolio/1.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="image/portofolio/2.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="image/portofolio/3.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="image/portofolio/4.jpg" alt="">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="image/portofolio/5.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><<</button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">>></button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        
+    </div>
+
+    <div class="blok-testi flex tengah-hor">
+        <div class="jud-testi">
+            <h2><u>Testimoni</u></h2>
+        </div>
+        <div class="bung-testi">
+            <?php
+            $sql = "SELECT * FROM guestbook";
+            $query = mysqli_query($db, $sql);
+            
+            $kotak='<div class="testismon flex tengah-hor"><div class="glide__track" data-glide-el="track"><ul class="glide__slides">';
+            $bullets = '<div class="glide__bullets" data-glide-el="controls[nav]">';
+            $penghitung=0;
+            while($siswa = mysqli_fetch_array($query)){
+                $kotak.= <<<kotak
+                    <li class="glide__slide">
+                        <h3>{$siswa['nama']}</h3>
+                        <p>"{$siswa['testimoni']}"</p>
+                    </li>
+                kotak;
+                $bullets.=<<<bullets
+                    <button class="glide__bullet" data-glide-dir="={$penghitung}"></button>
+                    bullets;
+                $penghitung++;
+            }
+            $kotak.="</ul></div>";
+            $kotak.=$bullets."</div></div>";
+            echo $kotak;
+            ?>       
+            </div>
     </div>
     
     <div class="blok4">
@@ -141,7 +176,7 @@
             </div>
     </div>
     <div class="copyr">
-        <p>&copy; Royan Fauzan x Computer Club Competition</p>
+        <p>&copy; 2020 - Royan Fauzan</p>
     </div>
     <!-- <footer>
         
@@ -149,11 +184,18 @@
 
     <script src="./js/main.js"></script>
     <script>
-        new Glide('.testismon', {
+        new Glide('.gambar', {
+            type:'carousel',
             autoplay:3000,
+            perView:1.5,
+            hoverpause:false
+        }).mount()
+
+        new Glide('.testismon', {
+            autoplay:3500,
             perView:2.5,
             hoverpause:true
-        }).mount()
+        }).mount();
     </script>
 </body>
 </html>
