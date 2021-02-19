@@ -51,946 +51,963 @@ table {
 
 /* RESETTER END */
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
-
 
 /* TEXT RELATED */
 
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 10vw;
-    font-weight: bolder;
-    margin: 0;
-    padding: 0;
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 10vw;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
 }
 
-h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    margin: 0;
-    padding: 0;
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
 }
 
-h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    margin: 0;
-    padding: 0;
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  padding: 0;
 }
 
-p{
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+p {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* flex famili */
-.flex{
-    display: flex;
-    flex-wrap: wrap;
+.flex {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.tengah-ver{
-    align-items: center;
+.tengah-ver {
+  align-items: center;
 }
 
-.tengah-hor{
-    justify-content: center;
+.tengah-hor {
+  justify-content: center;
 }
 
-.ver-spacing{
-    flex-direction: column;
-    justify-content: space-evenly;
+.ver-spacing {
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 /* NAVBAR */
 
-
-.navbar{
-    width: 100vw;
-    height: 16vh;
-    left: 0;
-    top: 0;
-    position: sticky;
-    background-color: white;
-    /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103); */
-    transition: 0.8s;
-    z-index: 999;
+.navbar {
+  width: 100vw;
+  height: 16vh;
+  left: 0;
+  top: 0;
+  position: sticky;
+  background-color: white;
+  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.103); */
+  transition: 0.8s;
+  z-index: 999;
 }
 
-.nav-items{
-    width: 70%;
-    height: 80%;
-    /* background-color: royalblue; */
-    justify-content: space-around;
+.nav-items {
+  width: 70%;
+  height: 80%;
+  /* background-color: royalblue; */
+  justify-content: space-around;
 }
 
-.nav-items li{
-    list-style: none;
+.nav-items li {
+  list-style: none;
 }
 
-.nav-items li a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+.nav-items li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
-.nav-items li a:hover{
-    text-decoration: underline;
-    color: black;
+.nav-items li a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
-.nav-items li a:visited{
-    text-decoration: none;
-    color: black;
+.nav-items li a:visited {
+  text-decoration: none;
+  color: black;
 }
 
 /* BLOK */
 
-.blok1{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../image/background/background.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.blok1 {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../image/background/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.blok1-sub{
-    width: 100vw;
-    height: 80vh;
-    background-image: url(../image/background/background.png);
-    background-position: bottom -17% right;
-    background-repeat: no-repeat;
-    background-size: contain;
+.blok1-sub {
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../image/background/background.png);
+  background-position: bottom -17% right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.blok2{
-    width: 100vw;
-    height: 90vh;
-    padding-top: 3%;
-    
+.blok2 {
+  width: 100vw;
+  height: 90vh;
+  padding-top: 3%;
 }
 
 #luar-tabel {
-    
-    height: auto;
-    min-height: 70vh;
-    padding-bottom: 10vh;
+  height: auto;
+  min-height: 70vh;
+  padding-bottom: 10vh;
 }
 
-.blok3{
-    width: 100vw;
-    height: 93vh;
-    background-color: #f0d73c;
+.blok3 {
+  width: 100vw;
+  height: 93vh;
+  background-color: #f0d73c;
 }
 
-.blok4{
-    width: 100vw;
-    height: 60vh;
-    padding-top: 3%;
-    background-image: url(../image/background/Bg2.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
+.blok4 {
+  width: 100vw;
+  height: 60vh;
+  padding-top: 3%;
+  background-image: url(../image/background/Bg2.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
-footer{
-    width: 100vw;
-    height: auto;
-    background-color: rgb(24, 24, 24);
-    color: whitesmoke;
-    text-align: center;
+footer {
+  width: 100vw;
+  height: auto;
+  background-color: rgb(24, 24, 24);
+  color: whitesmoke;
+  text-align: center;
 }
 
-footer p{
-    padding: 5px;
-    font-size: 0.8em;
+footer p {
+  padding: 5px;
+  font-size: 0.8em;
 }
 
-.blok-testi{
-    width: 100vw;
-    height: 40vh;
-    background-color: rgb(56, 54, 54);
-    color: whitesmoke;
+.blok-testi {
+  width: 100vw;
+  height: 50vh;
+  background-color: rgb(56, 54, 54);
+  color: whitesmoke;
 }
 
-.blok-testi h2{
-    margin-top: 2vh;
-    margin-bottom: 1vh;
+.blok-testi h2 {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
 }
 
-.inner-blok50{
-    width: 100vw;
-    height: 50%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+.inner-blok50 {
+  width: 100vw;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.wrapper{
-    display: flex;
-    align-items: flex-end;
+.wrapper {
+  display: flex;
+  align-items: flex-end;
 }
 
-.wrapper h1{
-    font-size: 10vw;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: rgb(88, 88, 88);
+.wrapper h1 {
+  font-size: 10vw;
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: rgb(88, 88, 88);
 }
 
-.wrapper h1:nth-child(2){
-    font-size: 8vw;
+.wrapper h1:nth-child(2) {
+  font-size: 8vw;
 }
 
-.inner-blok40{
-    width: 100vw;
-    height: 40%;
-    display: flex;
-    justify-content: center;
+.inner-blok40 {
+  width: 100vw;
+  height: 40%;
+  display: flex;
+  justify-content: center;
 }
 
-.inner-blok40 p{
-    padding-top: 2%;
+.inner-blok40 p {
+  padding-top: 2%;
 }
 
-.inner-blok10{
-    width: 100vw;
-    height: 10%;
+.inner-blok10 {
+  width: 100vw;
+  height: 10%;
 }
 
-.pemisah{
-    height: auto;
-    width: auto;
+.pemisah {
+  height: auto;
+  width: auto;
 }
 
 /* TOMBOL NEXT */
 
-.tombol-next{
-    font-family: 'Roboto';
-    font-weight: bolder;
-    flex-direction: column;
+.tombol-next {
+  font-family: "Roboto";
+  font-weight: bolder;
+  flex-direction: column;
 }
 
-
-
-a:link{
-    text-decoration: none;
-    color: black;
+a:link {
+  text-decoration: none;
+  color: black;
 }
 
-a:visited{
-    text-decoration: none;
-    color: black;
+a:visited {
+  text-decoration: none;
+  color: black;
 }
 
-.tombol-next img{
-    width: 51px;
+.tombol-next img {
+  width: 51px;
 }
 
-.tombol-next p{
-    margin: 0;
-    padding: 0;
+.tombol-next p {
+  margin: 0;
+  padding: 0;
 }
 
-.tombol-next p:hover{
-    background-color: rgb(56, 54, 54);
-    color: whitesmoke;
-    margin: 0;
-    padding: 0;
+.tombol-next p:hover {
+  background-color: rgb(56, 54, 54);
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
 }
 
 /* PROFILE */
 
-.penengah{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    height: auto;
-    justify-content: center;
+.penengah {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
 }
 
-.judul{
-    height: 10%;
-    width: 90%;
-    /* text-align: right; */
-    margin-bottom: 3vh;
-    margin-left: 3vw;
+.judul {
+  height: 10%;
+  width: 90%;
+  /* text-align: right; */
+  margin-bottom: 3vh;
+  margin-left: 3vw;
 }
 
-
-
-.judul h2{
-    font-size: 3.4em;
-    text-decoration: underline;
-    padding-right: 9vw;
+.judul h2 {
+  font-size: 3.4em;
+  text-decoration: underline;
+  padding-right: 9vw;
 }
 
-#luar-tentang{
-    /* background-color: black; */
-    width: 100%;
+#luar-tentang {
+  /* background-color: black; */
+  width: 100%;
 }
 
-#jud-tentang{
-    text-align: center;
-    text-decoration: none;
-    padding-right: 0;
+#jud-tentang {
+  text-align: center;
+  text-decoration: none;
+  padding-right: 0;
 }
 
-.jud-testi h2{
-    width: 100vw;
-        font-size: 3.4em;
-        text-decoration: underline;
-        padding:0;
-        text-align: center;
+.jud-testi h2 {
+  width: 100vw;
+  font-size: 3.4em;
+  text-decoration: underline;
+  padding: 0;
+  text-align: center;
 }
 
-.tentang{
-    width: 90vw;
-    height: auto;
+.tentang {
+  width: 90vw;
+  height: auto;
 }
 
-
-
-.kotak-tulisan{
-    width: 60vw;
-    align-content: center;
+.kotak-tulisan {
+  width: 60vw;
+  align-content: center;
 }
 
-.kotak-tulisan  p{
-    max-width: 100%;
-    margin: 0;
-    text-align: center;
+.kotak-tulisan p {
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
 }
 
-.kotak-tulisan a{
-    border-radius: 4px;
-    background-color: salmon;
-        color: #fff;
-        padding: 3px;
-        text-decoration: none;
-        font-size: 0.8em;
+.kotak-tulisan a {
+  border-radius: 4px;
+  background-color: salmon;
+  color: #fff;
+  padding: 3px;
+  text-decoration: none;
+  font-size: 0.8em;
 }
 
-.kotak-tulisan a:hover{
-    background-color: rgb(114, 250, 205);
-    color: rgb(104, 104, 104);
+.kotak-tulisan a:hover {
+  background-color: rgb(114, 250, 205);
+  color: rgb(104, 104, 104);
 }
 
-.kotak-inputan{
-    width: 60vw;
-    align-content: center;
+.kotak-inputan {
+  width: 60vw;
+  align-content: center;
 }
 
-.profile{
-    width: 40vh;
-    height: auto;
+.profile {
+  width: 40vh;
+  height: auto;
 }
 
-.foto{
-    width: 38vh;
-    height: 38vh;
-    border-radius: 100%;
-    background-color: #f0d73c;
+.foto {
+  width: 38vh;
+  height: 38vh;
+  border-radius: 100%;
+  background-color: #f0d73c;
 }
 
-.foto img{
-    max-width: 98%;
-    border-radius: inherit;
+.foto img {
+  max-width: 98%;
+  border-radius: inherit;
 }
 
-.tulisan{
-    width: 100%;
-    text-align: center;
+.tulisan {
+  width: 100%;
+  text-align: center;
 }
 
-
-
-.tulisan h3{
-    font-size: 1.5em;
+.tulisan h3 {
+  font-size: 1.5em;
 }
 
 /* PORTOFOLIO */
 
-.judul2{
-    width: 30%;
-    color: whitesmoke;
-    
+.judul2 {
+  width: 30%;
+  color: whitesmoke;
 }
 
-.judul2 h2{
-    font-size: 3.4em;
-    text-decoration: underline;
-    text-decoration-color: whitesmoke;
+.judul2 h2 {
+  font-size: 3.4em;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
 }
 
-.porto{
-    width: 68%;
-    height: 60%;
+.porto {
+  width: 68%;
+  height: 60%;
 }
 
-.bungkus{
-    height: 100%;
-    width: auto;
+.bungkus {
+  height: 100%;
+  width: auto;
 }
 
-.inner-b1{
-    height: 60vh;
-    width: 60vh;
+.inner-b1 {
+  height: 60vh;
+  width: 60vh;
 }
 
-.inner-b1 img{
-    max-width: 25vh;
-    margin-left: 2vw;
-    border-radius: 5%;
+.inner-b1 img {
+  max-width: 25vh;
+  margin-left: 2vw;
+  border-radius: 5%;
 }
 
-
-.inner-b80{
-    height: 70%;
+.inner-b80 {
+  height: 70%;
 }
 
-.inner-b80 img{
-    max-width: 90%;
-    
+.inner-b80 img {
+  max-width: 90%;
 }
 
-.inner-b2{
-    width: 30vh;
-    height: 60vh;
+.inner-b2 {
+  width: 30vh;
+  height: 60vh;
 }
 
-.inner-b30{
-    height: 100%;
+.inner-b30 {
+  height: 100%;
 }
 
-.inner-b30 img{
-    max-width: 80%;
-    margin-left: 2vw;
-    border-radius: 5%;
+.inner-b30 img {
+  max-width: 80%;
+  margin-left: 2vw;
+  border-radius: 5%;
 }
-
-
-
 
 /* KONTAK */
 
-.bung-kontak{
-    width: auto;
-    height: 40vh;
-    justify-content: space-around;
-    padding-right: 3vw;
-    overflow: hidden;
+.bung-kontak {
+  width: auto;
+  height: 45vh;
+  justify-content: space-around;
+  padding-right: 3vw;
+  overflow: hidden;
 }
 
-.kontak{
-    height: auto;
-    width: 40vw;
-    
-    overflow: hidden;
-    padding-top: 6vh;
+.kontak {
+  height: auto;
+  width: 40vw;
+
+  overflow: hidden;
+  padding-top: 6vh;
 }
 
-.isi-kontak{
-    display: flex;
-    height: 6vh;
-    width: 100%;
-    
-    overflow: hidden;
-    text-align: left;
-    align-items: center;
+.isi-kontak {
+  display: flex;
+  height: 6vh;
+  width: 100%;
+
+  overflow: hidden;
+  text-align: left;
+  align-items: center;
 }
 
-
-.isi-kontak p{
-    text-align: left;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    color: #1d1d1f;
+.isi-kontak p {
+  text-align: left;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  color: #1d1d1f;
 }
 
-.ikon{
-    height: 100%;
-    width: 20%;
+.ikon {
+  height: 100%;
+  width: 20%;
 }
 
-.ikon img{
-    max-width: 30px;
-    max-height: 30px;
+.ikon img {
+  max-width: 30px;
+  max-height: 30px;
 }
 
-.map{
-    margin-top: 20px;
-    min-height: 300px;
+.map {
+  margin-top: 20px;
+  min-height: 300px;
 }
 
-.copyr{
-    width: 100vw;
-    height: 5vh;
-    background-color: black;
-    text-align: center;
-    color: rgb(235, 232, 229);
-    padding: 0;
-    padding-top: 5px;
-    font-size: 0.8em;
-    overflow: hidden;
+.copyr {
+  width: 100vw;
+  height: 5vh;
+  background-color: black;
+  text-align: center;
+  color: rgb(235, 232, 229);
+  padding: 0;
+  padding-top: 5px;
+  font-size: 0.8em;
+  overflow: hidden;
 }
 
-.bung-testi{
-    height: 30vh;
-    width: 80%;
+.bung-testi {
+  height: 30vh;
+  width: 80%;
 }
 
-.testismon{
-    height: 80%;
+.testismon {
+  height: 90%;
 }
 
-.glide__bullets{
-    position: relative;
-    left: 3%;
+.glide__bullets {
+  position: relative;
+  left: 3%;
+  bottom: 0;
 }
 
-.glide__arrows{
-    position: relative;
-    margin-top: 3vh;
+.glide__arrows {
+  position: relative;
+  margin-top: 3vh;
 }
 
-.gambar{
-    width: 100%;
-    height: 100%;
+.gambar {
+  width: 100%;
+  height: 100%;
 }
 
-.gambar img{
-    width: 100%;
-    border-radius: 3%;
+.gambar img {
+  width: 100%;
+  border-radius: 3%;
 }
-
 
 /* TABEL DATA */
 
 .kotak-tulisan table {
-    border: solid 1px #DDEEEE;
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 90%;
-    margin: 10px auto 3px auto;
-    font-family: 'Open Sans', sans-serif;
+  border: solid 1px #ddeeee;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 90%;
+  margin: 10px auto 3px auto;
+  font-family: "Open Sans", sans-serif;
 }
 table thead th {
-    background-color: #f5d5f7;
-    border: solid 1px #dcc6dd;
-    color: #817e80;
-    padding: 3px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgb(247, 235, 242);
-    text-decoration: none;
+  background-color: #f5d5f7;
+  border: solid 1px #dcc6dd;
+  color: #817e80;
+  padding: 3px;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(247, 235, 242);
+  text-decoration: none;
 }
 table tbody td {
-    border: solid 1px #DDEEEE;
-    color: #333;
-    padding: 5px;
-    text-shadow: 1px 1px 1px #fff;
+  border: solid 1px #ddeeee;
+  color: #333;
+  padding: 5px;
+  text-shadow: 1px 1px 1px #fff;
 }
 table a {
-        background-color: salmon;
-        color: #fff;
-        padding: 3px;
-        text-decoration: none;
-        font-size: 0.8em;
+  background-color: salmon;
+  color: #fff;
+  padding: 3px;
+  text-decoration: none;
+  font-size: 0.8em;
 }
-
 
 /* TESTIMONI */
 
-form{
-    font-family: 'roboto', sans-serif;
+form {
+  font-family: "roboto", sans-serif;
 }
 
 label {
-    margin-top: 10px;
-    padding-inline-start: 3vw;
-    float: left;
-    text-align: left;
-    width: 100%;
-    font-weight: bold;
-    color: rgb(89, 95, 95);
+  margin-top: 10px;
+  padding-inline-start: 3vw;
+  float: left;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  color: rgb(89, 95, 95);
 }
 input {
-    padding: 6px;
-    width: 90%;
-    box-sizing: border-box;
-    background: #ffffff;
-    border: 1px solid rgb(244, 251, 252);
-    outline-color: salmon;
-    border-radius: 15px;
+  padding: 6px;
+  width: 90%;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid rgb(244, 251, 252);
+  outline-color: salmon;
+  border-radius: 15px;
 }
 
-#input-testi{
-    height: 8vh;
+#input-testi {
+  height: 8vh;
 }
 
 .base {
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f7dcee;
+  border-radius: 15px;
+}
+
+.btn-simpan {
+  font-family: "roboto", sans-serif;
+  background-color: salmon;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 12px;
+  border: 0px;
+  margin-top: 20px;
+  min-width: 10vw;
+  border-radius: 15px;
+}
+
+.btn-simpan:hover {
+  background-color: rgb(114, 250, 205);
+  color: rgb(104, 104, 104);
+}
+
+/* SPECIAL Item */
+.special-item {
+  flex-wrap: wrap;
+  align-items: center;
+  width: 200px;
+  height: 100%;
+  /* background-color: teal; */
+  margin: 0;
+  padding: 0;
+}
+
+#jjj {
+  background-color: white;
+  position: relative;
+  font-size: 0.45em;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 50%;
+  border-color: teal;
+  font-family: "roboto", sans-serif;
+}
+
+.isi-special {
+  height: 300px;
+  width: 200px;
+}
+
+.isi-special img {
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.isi-special table {
+  border: solid 1px #ddeeee;
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 150px;
+  margin: 10px auto 10px auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.5em;
+}
+
+@media (max-width: 1078px) {
+  .tengah-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 8em;
+  }
+
+  .wrapper h1 {
+    font-size: 8em;
+  }
+
+  .wrapper h1:nth-child(2) {
+    font-size: 6.73em;
+  }
+
+  .pemisah {
+    width: 100%;
+  }
+
+  .judul2 {
+    width: 100%;
+    padding-left: 5%;
+    margin-top: 3%;
+  }
+
+  .res-hor {
+    justify-content: left;
+  }
+
+  .blok3 {
+    min-height: 50vh;
+    padding-bottom: 3vh;
+  }
+
+  .kontak {
+    width: 50vw;
+  }
+  .blok4 {
+    height: auto;
+  }
+
+  .bung-kontak {
+    overflow: visible;
+    height: auto;
+  }
+
+  .blok1-sub {
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 950px) {
+  .tengah-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blok4 {
+    height: auto;
+  }
+
+  .bung-kontak {
+    overflow: visible;
+    height: auto;
+  }
+
+  .blok1-sub {
+    background-position: bottom;
+  }
+  .glide__bullets {
+    left: 30%;
+  }
+}
+
+@media (max-width: 855px) {
+  h1 {
+    font-size: 6.9em;
+  }
+
+  .wrapper h1 {
+    font-size: 6.9em;
+  }
+
+  .wrapper h1:nth-child(2) {
+    font-size: 5.5em;
+  }
+  .judul {
+    margin-bottom: 3%;
+  }
+
+  .judul2 {
+    margin-bottom: 3%;
+  }
+
+  .judul h2 {
+    font-size: 2.8em;
+    right: 5%;
+  }
+  .judul2 h2 {
+    font-size: 2.8em;
+    right: 5%;
+  }
+
+  .jud-testi h2 {
+    font-size: 2.8em;
+  }
+
+  .blok3 {
+    height: auto;
+    padding-bottom: 3vh;
+  }
+  .blok4 {
+    height: auto;
+  }
+  .kontak {
+    width: 60vw;
+  }
+
+  .bungkus {
+    padding-top: 3%;
+  }
+
+  .inner-b1 {
+    height: auto;
+  }
+
+  .inner-b1 img {
+    max-width: 60vh;
+  }
+
+  .inner-b80 {
+    height: 70%;
+  }
+
+  .inner-b80 img {
+    max-width: 90%;
+  }
+
+  .inner-b2 {
+    width: 60vh;
+    height: auto;
+  }
+
+  .inner-b20 img {
+    max-width: 90%;
+    max-height: 90%;
+    margin-top: 4%;
+  }
+
+  .inner-b30 {
+    width: 60vh;
+    height: auto;
+  }
+
+  .inner-b30 img {
+    max-width: 90%;
+    margin-top: 4%;
+  }
+
+  .res-hor2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bung-kontak {
+    overflow: visible;
+    height: auto;
+  }
+
+  .kontak {
+    padding-top: 3vh;
+  }
+
+  .nav-items {
     width: 80%;
+    padding-inline-start: 0;
+  }
+
+  .blok1-sub {
+    background-position: bottom;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .judul {
+    margin-bottom: 8%;
+  }
+
+  .judul h2 {
+    font-size: 2.2em;
+    right: 8%;
+  }
+
+  .jud-testi h2 {
+    font-size: 2.2em;
+  }
+
+  .tombol-next {
+    right: 45%;
+  }
+
+  .kontak {
+    width: 80vw;
     height: auto;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #f7dcee;
-    border-radius: 15px;
-}
+  }
 
-.btn-simpan{
-    font-family: 'roboto', sans-serif;
-    background-color: salmon;
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 12px;
-    border: 0px;
-    margin-top: 20px;
-    min-width: 10vw;
-    border-radius: 15px;
-}
+  .inner-b80 img {
+    max-width: 250px;
+  }
+  .inner-b20 img {
+    max-width: 250px;
+    max-height: 30vh;
+  }
 
-.btn-simpan:hover{
-    background-color: rgb(114, 250, 205);
-    color: rgb(104, 104, 104);
-}
-
-
-@media (max-width: 1078px){
-
-
-    .tengah-vertical{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1{
-        font-size: 8em;
-    }
-
-    .wrapper h1{
-        font-size: 8em;
-    }
-
-    .wrapper h1:nth-child(2){
-        font-size: 6.73em;
-    }
-
-    .pemisah{
-        width: 100%;
-    }
-
-    .judul2{
-        width: 100%;
-        padding-left: 5%;
-        margin-top: 3%;
-    }
-
-    .res-hor{
-        justify-content: left;
-    }
-
-    .blok3{
-        min-height: 50vh;
-        padding-bottom: 3vh;
-    }
-
-    .kontak{
-        width: 50vw;
-    }
-    .blok4{
-        height: auto;
-        }
-
-    .bung-kontak{
-        overflow: visible;
-        height: auto;
-    }
-
-    .blok1-sub{
-        background-position: bottom;
-    }
-
-}
-
-
-@media (max-width: 950px){
-
-    .tengah-vertical{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .blok4{
-        height: auto;
-        }
-    
-        .bung-kontak{
-            overflow: visible;
-            height: auto;
-        }
-
-        .blok1-sub{
-            background-position: bottom;
-        }
-        .glide__bullets{
-            left: 40%;
-        }
-}
-
-@media (max-width: 855px){
-    
-    h1{
-        font-size: 6.9em;
-    }
-
-    .wrapper h1{
-        font-size: 6.9em;
-    }
-
-    .wrapper h1:nth-child(2){
-        font-size: 5.5em;
-    }
-    .judul{
-        margin-bottom: 3%;
-    }
-
-    .judul2{
-        margin-bottom: 3%;
-    }
-
-    .judul h2{
-        font-size: 2.8em;
-        right: 5%;
-    }
-    .judul2 h2{
-        font-size: 2.8em;
-        right: 5%;
-    }
-
-    .jud-testi h2{
-        font-size: 2.8em;
-    }
-
-    .blok3{
-        height: auto;
-        padding-bottom: 3vh;
-    }
-    .blok4{
+  .inner-b30 img {
+    max-width: 250px;
+  }
+  .blok4 {
     height: auto;
-    }
-    .kontak{
-        width: 60vw;
-    }
+  }
 
-    .bungkus{
-        padding-top: 3%;
-    }
+  .bung-kontak {
+    overflow: visible;
+    height: auto;
+  }
 
-    .inner-b1{
-        height: auto;
-    }
-    
-    .inner-b1 img{
-        max-width: 60vh;
-    }
-    
-    
-    .inner-b80{
-        height: 70%;
-    }
-    
-    .inner-b80 img{
-        max-width: 90%;
-        
-    }
-    
-    .inner-b2{
-        width: 60vh;
-        height: auto;
-    }
-    
-    .inner-b20 img{
-        max-width: 90%;
-        max-height: 90%;
-        margin-top: 4%;
-    }
+  .kontak {
+    padding-top: 3vh;
+  }
 
-    .inner-b30{
-        width: 60vh;
-        height: auto;
-    }
+  .nav-items {
+    width: 85%;
+    padding-inline-start: 0;
+  }
 
-    .inner-b30 img{
-        max-width: 90%;
-        margin-top: 4%;
-    }
+  .blok1-sub {
+    background-position: bottom;
+  }
 
-    .res-hor2{
-        display: flex;
-        justify-content: center;
-    }
+  .porto {
+    width: 80%;
+    height: 75%;
+  }
 
-    .bung-kontak{
-        overflow: visible;
-        height: auto;
-    }
-    
-    .kontak{
+  .glide__bullets {
+    left: 20%;
+    bottom: unset;
+  }
 
-        padding-top: 3vh;
-    }
+  .blok-testi {
+    height: 40vh;
+  }
 
-    .nav-items{
-        width: 80%;
-        padding-inline-start: 0;
-    }
+  .bung-testi {
+    height: 20vh;
+    width: 80%;
+  }
 
-    .blok1-sub{
-        background-position: bottom;
-    }
+  .kotak-tulisan {
+    width: 80vw;
+  }
 
-    
+  .kotak-tulisan p {
+    max-width: 85%;
+  }
+
+  .special-item{
+    margin-top: 2vh;
+  }
 }
 
-@media screen and (max-width: 650px){
-    .judul{
-        margin-bottom: 8%;
-    }
+@media screen and (max-width: 415px) {
+  h1 {
+    font-size: 5em;
+  }
 
-    .judul h2{
-        font-size: 2.2em;
-        right: 8%;
-    }
+  .wrapper h1 {
+    font-size: 5em;
+  }
 
-    .jud-testi h2{
-        font-size: 2.2em;
-    }
+  .wrapper h1:nth-child(2) {
+    font-size: 3.7em;
+  }
 
-    .tombol-next{
-        right: 45%;
-    }
+  .kontak {
+    width: 95vw;
+  }
+  .blok4 {
+    height: auto;
+  }
 
-    .kontak{
-        width: 80vw;
-    }
+  .bung-kontak {
+    overflow: visible;
+    height: auto;
+  }
 
-    .inner-b80 img{
-        max-width: 250px;
-    }
-    .inner-b20 img{
-        max-width: 250px;
-        max-height: 30vh;
-    }
+  .kontak {
+    padding-top: 3vh;
+  }
 
-    .inner-b30 img{
-        max-width: 250px;
-    }
-    .blok4{
-        height: auto;
-    }
+  .nav-items {
+    width: 90%;
+    padding-inline-start: 0;
+  }
 
-    .bung-kontak{
-        overflow: visible;
-        height: auto;
-    }
+  .blok1-sub {
+    background-position: bottom;
+  }
 
-    .kontak{
-
-        padding-top: 3vh;
-    }
-
-    .nav-items{
-        width: 85%;
-        padding-inline-start: 0;
-    }
-
-    .blok1-sub{
-        background-position: bottom;
-    }
-
-    .porto{
-        width: 80%;
-        height: 75%;
-    }
-
-    .glide__bullets{
-        left: 30%;
-        bottom: unset;
-    }
-
-    .blok-testi{
-        height: 30vh;
-    }
-
-    .bung-testi{
-        height: 20vh;
-        width: 80%;
-    }
-
-
-
-
-}
-
-@media screen and (max-width: 415px){
-    h1{
-        font-size: 5em;
-    }
-
-    .wrapper h1{
-        font-size: 5em;
-    }
-
-    .wrapper h1:nth-child(2){
-        font-size: 3.7em;
-    }
-
-    .kontak{
-        width: 95vw;
-    }
-    .blok4{
-        height: auto;
-    }
-
-    .bung-kontak{
-        overflow: visible;
-        height: auto;
-    }
-
-    .kontak{
-
-        padding-top: 3vh;
-    }
-
-    .nav-items{
-        width: 90%;
-        padding-inline-start: 0;
-    }
-
-    .blok1-sub{
-        background-position: bottom;
-    }
-
-    .glide__bullets{
-        left: 20%;
-    }
+  .glide__bullets {
+    left: 15%;
+  }
 }

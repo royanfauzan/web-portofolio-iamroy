@@ -177,6 +177,10 @@
                         <p>Jl.Diponegoro No.99x,Tabanan,Bali,82171</p>
                     </div>
                 </div>
+                <div class="special-item flex tengah-ver tengah-hor">
+                    <img src="./image/icon/logo100.gif" alt="">
+                        <script src="./js/kalender.js"></script>   
+                </div>
                 <div class="map ">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.6243199111345!2d115.13846011433488!3d-8.535803788858345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd23a553ccfbf65%3A0xcdda98f877d77ba9!2sJl.%20Tukad%20Yeh%20Nusa%2C%20Banjar%20Anyar%2C%20Kec.%20Kediri%2C%20Kabupaten%20Tabanan%2C%20Bali%2082121!5e0!3m2!1sid!2sid!4v1611989633627!5m2!1sid!2sid" width="300" height="230" margin-top="20" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
