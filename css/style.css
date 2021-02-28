@@ -501,6 +501,7 @@ a:visited {
   color: #1d1d1f;
 }
 
+
 .ikon {
   height: 100%;
   width: 20%;
@@ -770,6 +771,10 @@ input {
   .glide__bullets {
     left: 30%;
   }
+
+  .isi-kontak:last-child{
+    height: 8vh;
+  }
 }
 
 @media (max-width: 855px) {
@@ -879,6 +884,10 @@ input {
   .blok1-sub {
     background-position: bottom;
   }
+
+  #jjj{
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -967,6 +976,10 @@ input {
   .special-item{
     margin-top: 2vh;
   }
+
+  #jjj{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 415px) {
@@ -1010,4 +1023,6 @@ input {
   .glide__bullets {
     left: 15%;
   }
+
+  
 }
